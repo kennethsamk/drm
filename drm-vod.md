@@ -89,7 +89,7 @@ You'll need the following resources created in module 1:
 
 1. Navigate to the AWS API Gateway Console
 2. Select the region deployed with the SPEKE Reference Server
-3. Select the EkeRestAPI
+3. Select the SPEKEReferenceAPI
 4. Select the POST method on the /copyProtection resource
 5. Click the Test link on the left side of the main compartment
 6. Replace the **hostname** Copy the following into the Headers compartment
