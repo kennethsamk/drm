@@ -168,10 +168,15 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 1. Turn on **DRM encryption**
 1. Select `AES 128` for the Encryption method.
 1. Select `SPEKE` as the Key provider type.
-1. Enter in a ResourceID e.g `6c5f5206-7d98-4808-84d8-94f132c1e9fe`.
-1. Enter the DRM System ID. ```81376844-f976-481e-a84e-cc25d39b0b33``` for AES-128 
-1. Enter the SPEKE Reference Server API as the URL. e.g 
-```https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection```
+1. Enter in a ResourceID e.g ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
+1. Enter the DRM System ID for AES-123
+
+```81376844-f976-481e-a84e-cc25d39b0b33```
+
+1. Enter your SPEKE Reference Server API as the URL. 
+
+```https://**{host}**.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection```
+
 1. Click on **Update** at the bottom of the page to save. 
 
 #### Create the job
