@@ -162,6 +162,10 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 1. Open the MediaConvert console for the region you are completing the lab in (US-West-Oregon).<br/> https://us-west-2.console.aws.amazon.com/mediaconvert/home?region=us-west-2#/welcome
 1. Select **Job templates** from the side bar menu. 
+
+![Select Job Templates](../images/job_templates.jpeg)
+
+
 1. Select `{HLS JOB TEMPLATE}` to open the Jobs templates details page.
 1. Click on **Update** to edit the Template
 1. Select `HLS OUTPUT GROUP NAME` on the Job panel.
