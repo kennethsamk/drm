@@ -160,12 +160,17 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 ### Detailed Instructions
 
-#### Inputs section
+#### Job Templates section
 
 1. Open the MediaConvert console for the region you are completing the lab in (US-West-Oregon).<br/> https://us-west-2.console.aws.amazon.com/mediaconvert/home?region=us-west-2#/welcome
-1. Select **Jobs** from the side bar menu. 
-1. Select **Create job** to open the Create job page.
-1. Select **Input 1** on the Job panel to open the form for Input 1.
+1. Select **Job templates** from the side bar menu. 
+1. Select **{HLS JOB NAME}** to open the Jobs templates details page.
+1. Click on Update to Edit the Template
+1. Select **HLS OUTPUT GROUP NAME** on the Job panel.
+1. Turn on **DRM encryption**
+1. Select **AES 128** for the Encryption method
+1. Select **SPEKE** as the Key provider type
+1. 
 1. Enter the file name `s3://rodeolabz-us-west-2/vodconsole/VANLIFE.m2ts` in the box under Input 1. 
 
     ![input 1 image](../images/mediaconvert-create-job-input1.png)
