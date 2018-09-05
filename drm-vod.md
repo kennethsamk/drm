@@ -17,7 +17,7 @@ You'll need the following resources created in module 1:
 * **MediaConvertRole** - the role created to give permission for MediaConvert to access resources in your account.
 * **MediaBucket** - the bucket created to store outputs from MediaConvert
 
-## 1. Testing the SPEKE API
+## 1. Testing the SPEKE API...
 
 ### Lambdas
 
