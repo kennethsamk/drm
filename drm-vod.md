@@ -25,7 +25,7 @@ You'll need the following resources created in module 1:
 
 1. Navigate to the AWS Lambda Console
 2. Select the region deployed with the SPEKE Reference Server
-3. Select the function that contains the name EkeServerLambdaFunction
+3. Select the function that contains the name {STACKNAME}-SPEKEServerLambda-{}
 4. Pull down the test events list at the top right
 5. Choose Configure test events
 6. Set the Saved Test Event name to ServerKeyRequest
