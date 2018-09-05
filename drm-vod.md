@@ -173,7 +173,7 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 1. Enter in a ResourceID e.g `6c5f5206-7d98-4808-84d8-94f132c1e9fe`.
 1. Enter the DRM System ID. `81376844-f976-481e-a84e-cc25d39b0b33` for AES128 
 1. Enter the SPEKE Reference Server API as the URL. e.g `https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection`
-1. Enter the file name `s3://rodeolabz-us-west-2/vodconsole/VANLIFE.m2ts` in the box under Input 1. 
+1. Click on **Update** at the bottom of the page to save. 
 
     ![input 1 image](../images/mediaconvert-create-job-input1.png)
 
