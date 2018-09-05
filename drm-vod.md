@@ -163,16 +163,16 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 1. Open the MediaConvert console for the region you are completing the lab in (US-West-Oregon).<br/> https://us-west-2.console.aws.amazon.com/mediaconvert/home?region=us-west-2#/welcome
 1. Select **Job templates** from the side bar menu. 
 
-![Select Job Templates](../images/job_templates.jpeg)
-
-![Select Job Templates](/images/job_templates.jpeg)
-
 ![Select Job Templates](./images/job_templates.jpeg)
 
 1. Select `{HLS JOB TEMPLATE}` to open the Jobs templates details page.
 1. Click on **Update** to edit the Template
 1. Select `HLS OUTPUT GROUP NAME` on the Job panel.
 1. Turn on **DRM encryption**
+
+![HLS Output Group](./images/hls_output_group.jpeg)
+
+
 1. Select `AES 128` for the Encryption method.
 1. Select `SPEKE` as the Key provider type.
 1. Enter in a ResourceID e.g ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
@@ -186,6 +186,8 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 ```
   https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection
 ```
+
+![HLS Output Group](./images/drm_settings.jpeg)
 
 1. Click on **Update** at the bottom of the page to save the Job template. 
 
