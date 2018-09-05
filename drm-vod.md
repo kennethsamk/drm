@@ -92,7 +92,7 @@ You'll need the following resources created in module 1:
 3. Select the SPEKEReferenceAPI
 4. Select the POST method on the /copyProtection resource
 5. Click the Test link on the left side of the main compartment
-6. Replace the **hostname** Copy the following into the Headers compartment
+6. Replace the **hostname** Copy the following into the Headers {copyProtection} compartment
 ```
 Host:hostname.execute-api.us-east-1.amazonaws.com
 ```
