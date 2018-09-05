@@ -165,6 +165,9 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 ![Select Job Templates](../images/job_templates.jpeg)
 
+![Select Job Templates](/images/job_templates.jpeg)
+
+![Select Job Templates](./images/job_templates.jpeg)
 
 1. Select `{HLS JOB TEMPLATE}` to open the Jobs templates details page.
 1. Click on **Update** to edit the Template
