@@ -1,4 +1,4 @@
-# Module 2: Digital Rights Management (DRM) and Encryption
+# Module : Digital Rights Management (DRM) and Encryption
 
 When working with videos for your service or Over the Top (OTT) platform, you will very likely need to secure and protect your content prior to delivering videos to your end users. Approaches for securing content include basic content _encryption_ or by applying highly secure Digital Rights Management (DRM) to the content. Examples of DRM include Fairplay, Widevine and PlayReady.
 
@@ -24,7 +24,7 @@ You'll need the following resources created in module 1:
 #### Server Test
 
 1. Navigate to the AWS Lambda Console
-2. Select the region deployed with the SPEKE Reference Server
+2. Select the region deployed with the SPEKE Reference Server. 
 3. Select the function that contains the name EkeServerLambdaFunction
 4. Pull down the test events list at the top right
 5. Choose Configure test events
