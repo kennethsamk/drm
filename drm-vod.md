@@ -175,45 +175,6 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 1. Enter the SPEKE Reference Server API as the URL. e.g `https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection`
 1. Click on **Update** at the bottom of the page to save. 
 
-    ![input 1 image](../images/mediaconvert-create-job-input1.png)
-
-#### Add an Apple HLS Output Group
-
-1. Under **Output Groups** on the Job panel, select **Add**.
-2. Check the **Apple HLS** box then click on **Select**.
-3. Make sure **Apple HLS** is selected in the Job panel in the Output groups section so that Apple HLS form is loaded.
-4. Fill in `HLS` in the **Custom group name** box.
-5. Use the bucket name you saved from the previous module to construct the output S3 path as follows:
-    
-    ```
-    s3://<MediaBucket>/assets/VANLIFE/HLS/
-    ```
-
-6. Fill in the resulting output S3 path in the **Destination** box.
-7. Leave the remaining settings as the default.
-8. Scroll down to the **Outputs** panel and click on **Add output** two times so that there are a total of three outputs.
-
-    ![3 HLS Outputs](../images/mediaconvert-hls-3-outputs.png)
-
-9. Select Output 1 from the Output Groups section Jobs panel to go to the Output settings form for Output 1.
-10. Enter `_360` in the **Name modifier** box
-11. Enter `$dt$` in the **Segment modifier** box.  Note: the reason we need to do this is that we will be using the same output location for our output files.  This will prevent us from reading in segments left over from another, longer, video that was written to the same folder.
-
-    ![HLS output settings](../images/mediaconvert-hls-settings.png)
-
-12. Scroll down to the **Stream settings** panel and enter `640` and `360` in the **Resolution (w x h)** box
-13. Scroll down to the **Bitrate (bits/s)** box and enter `1000000`.
-14. Select Output 2 from the Output Groups section Jobs panel to go to the Output settings form for Output 2.
-15. Enter `_540` in the **Name modifier** box
-16. Enter `$dt$` in the **Segment modifier** box.
-17. Scroll down to the **Stream settings** panel and enter `960` and `540` in the **Resolution (w x h)** box
-18. Scroll down to the **Bitrate (bits/s)** box and enter `2000000`.
-19. Select Output 3 from the Output Groups section Jobs panel to go to the Output settings form for Output 3.
-20. Enter `_720` in the **Name modifier** box
-21. Enter `$dt$` in the **Segment modifier** box.
-22. Scroll down to the **Stream settings** panel and enter `1280` and `720` in the **Resolution (w x h)** box
-23. Scroll down to the **Bitrate (bits/s)** box and enter `3000000`.
-
 #### Create the job
 
 1. Scroll to the bottom of the page and select **Create**
