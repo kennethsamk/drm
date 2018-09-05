@@ -55,13 +55,33 @@ You'll need the following resources created in module 1:
 4. Expand the details of the execution result
 5. Find and verify the following XML data in the Log output compartment (formatted for readability); this data includes the encoded encryption key value and the key ID (kid)
 ```
-<cpix:ContentKey kid="6c5f5206-7d98-4808-84d8-94f132c1e9fe">
-    <cpix:Data>
-        <pskc:Secret>
-            <pskc:PlainValue>ALzP1aOTJvzfqg9I12k2Vw==</pskc:PlainValue>
-        </pskc:Secret>
-    </cpix:Data>
-</cpix:ContentKey>
+<?xml version="1.0" encoding="UTF-8"?>
+<cpix:CPIX xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:speke="urn:aws:amazon:com:speke" id="5E99137A-BD6C-4ECC-A24D-A3EE04B4E011">
+   <cpix:ContentKeyList>
+      <cpix:ContentKey kid="6c5f5206-7d98-4808-84d8-94f132c1e9fe">
+         <cpix:Data>
+            <pskc:Secret>
+               <pskc:PlainValue>ALzP1aOTJvzfqg9I12k2Vw==</pskc:PlainValue>
+            </pskc:Secret>
+         </cpix:Data>
+      </cpix:ContentKey>
+   </cpix:ContentKeyList>
+   <cpix:DRMSystemList>
+      <cpix:DRMSystem kid="6c5f5206-7d98-4808-84d8-94f132c1e9fe" systemId="81376844-f976-481e-a84e-cc25d39b0b33">
+         <speke:KeyFormat />
+         <speke:KeyFormatVersions />
+         <cpix:URIExtXKey>aHR0cHM6Ly9kMnVod2Jqc3p1ejF2Ny5jbG91ZGZyb250Lm5ldC81RTk5MTM3QS1CRDZDLTRFQ0MtQTI0RC1BM0VFMDRCNEUwMTEvNmM1ZjUyMDYtN2Q5OC00ODA4LTg0ZDgtOTRmMTMyYzFlOWZl</cpix:URIExtXKey>
+      </cpix:DRMSystem>
+   </cpix:DRMSystemList>
+   <cpix:ContentKeyPeriodList>
+      <cpix:ContentKeyPeriod id="keyPeriod_e64248f6-f307-4b99-aa67-b35a78253622" index="11425" />
+   </cpix:ContentKeyPeriodList>
+   <cpix:ContentKeyUsageRuleList>
+      <cpix:ContentKeyUsageRule kid="6c5f5206-7d98-4808-84d8-94f132c1e9fe">
+         <cpix:KeyPeriodFilter periodId="keyPeriod_e64248f6-f307-4b99-aa67-b35a78253622" />
+      </cpix:ContentKeyUsageRule>
+   </cpix:ContentKeyUsageRuleList>
+</cpix:CPIX>
 ```
 ### API Gateway
 
