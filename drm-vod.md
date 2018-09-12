@@ -50,7 +50,7 @@ You'll need the following resources created in module 1:
   "isBase64Encoded": true
 }
 ```
-2. Select the ServerKeyRequest saved test event
+8. Select the ServerKeyRequest saved test event
 1. Click the Test button
 1. Expand the details of the execution result
 1. Find and verify the following XML data in the Log output compartment (formatted for readability); this data includes the encoded encryption key value and the key ID (kid)
