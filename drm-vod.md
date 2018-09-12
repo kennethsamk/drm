@@ -193,11 +193,11 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 #### Create the job
 
-1. Scroll to the bottom of the page and select **Create**
+1. Scroll to the top Job template details page and select **Create Job**
+1. Browse to your input source asset
 1. Wait for the job to complete.  Monitor the status of the job by refreshing the **Job details** page using the **refresh** button. 
 
     ![Save the Job ID](../images/mediaconvert-save-jobid.png)
-
 
 ## 2. View outputs in S3  
 
