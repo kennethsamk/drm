@@ -50,10 +50,10 @@ You'll need the following resources created in module 1:
   "isBase64Encoded": true
 }
 ```
-2. Select the ServerKeyRequest saved test event
-3. Click the Test button
-4. Expand the details of the execution result
-5. Find and verify the following XML data in the Log output compartment (formatted for readability); this data includes the encoded encryption key value and the key ID (kid)
+8. Select the ServerKeyRequest saved test event
+9. Click the Test button
+10. Expand the details of the execution result
+11. Find and verify the following XML data in the Log output compartment (formatted for readability); this data includes the encoded encryption key value and the key ID (kid)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <cpix:CPIX xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:speke="urn:aws:amazon:com:speke" id="5E99137A-BD6C-4ECC-A24D-A3EE04B4E011">
@@ -161,27 +161,27 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 #### Job Templates section
 
 1. Open the MediaConvert console for the region you are completing the lab in (US-West-Oregon).<br/> https://us-west-2.console.aws.amazon.com/mediaconvert/home?region=us-west-2#/welcome
-1. Select **Job templates** from the side bar menu. 
-1. Select **Custom Templates** from the dropdown menu
+2. Select **Job templates** from the side bar menu. 
+3. Select **Custom Templates** from the dropdown menu
 
 ![Select Job Templates](./images/job_templates.jpeg)
 
-1. Select `{HLS JOB TEMPLATE}` to open the Jobs templates details page.
-1. Click on **Update** to edit the Template
-1. Select `HLS OUTPUT GROUP NAME` on the Job panel.
-1. Turn on **DRM encryption**
+4. Select `{HLS JOB TEMPLATE}` to open the Jobs templates details page.
+5. Click on **Update** to edit the Template
+6. Select `HLS OUTPUT GROUP NAME` on the Job panel.
+7. Turn on **DRM encryption**
 
 ![HLS Output Group](./images/hls_output_group.jpeg)
 
-1. Select `AES 128` for the Encryption method.
-1. Select `SPEKE` as the Key provider type.
-1. Enter in a ResourceID e.g ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
-1. Enter the DRM System ID for AES-128
+8. Select `AES 128` for the Encryption method.
+9. Select `SPEKE` as the Key provider type.
+10. Enter in a ResourceID e.g ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
+11. Enter the DRM System ID for AES-128
 ```
    81376844-f976-481e-a84e-cc25d39b0b33
 ```
 
-1. Enter your SPEKE Reference Server API as the URL. ( Replace the Hostname )
+12. Enter your SPEKE Reference Server API as the URL. ( Replace the Hostname )
 
 ```
   https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection
@@ -189,7 +189,7 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 ![HLS Output Group](./images/drm_settings.jpeg)
 
-1. Click on **Update** at the bottom of the page to save the Job template. 
+13. Click on **Update** at the bottom of the page to save the Job template. 
 
 #### Create the job
 
