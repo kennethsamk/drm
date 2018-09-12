@@ -126,7 +126,7 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
     </cpix:ContentKeyUsageRuleList>
 </cpix:CPIX>
 ```
-1. Click the Test button
+6. Click the Test button
 1. Review the Response Body for the encoded key value
 ```
 <cpix:CPIX xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:speke="urn:aws:amazon:com:speke" id="5E99137A-BD6C-4ECC-A24D-A3EE04B4E011">
@@ -161,22 +161,22 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 #### Job Templates section
 
 1. Open the MediaConvert console for the region you are completing the lab in (US-West-Oregon).<br/> https://us-west-2.console.aws.amazon.com/mediaconvert/home?region=us-west-2#/welcome
-2. Select **Job templates** from the side bar menu. 
-3. Select **Custom Templates** from the dropdown menu
+1. Select **Job templates** from the side bar menu. 
+1. Select **Custom Templates** from the dropdown menu
 
 ![Select Job Templates](./images/job_templates.jpeg)
 
 4. Select `{HLS JOB TEMPLATE}` to open the Jobs templates details page.
-5. Click on **Update** to edit the Template
-6. Select `HLS OUTPUT GROUP NAME` on the Job panel.
-7. Turn on **DRM encryption**
+1. Click on **Update** to edit the Template
+1. Select `HLS OUTPUT GROUP NAME` on the Job panel.
+1. Turn on **DRM encryption**
 
 ![HLS Output Group](./images/hls_output_group.jpeg)
 
 8. Select `AES 128` for the Encryption method.
-9. Select `SPEKE` as the Key provider type.
-10. Enter in a ResourceID e.g ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
-11. Enter the DRM System ID for AES-128
+1. Select `SPEKE` as the Key provider type.
+1. Enter in a ResourceID e.g ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
+1. Enter the DRM System ID for AES-128
 ```
    81376844-f976-481e-a84e-cc25d39b0b33
 ```
@@ -202,8 +202,8 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 ## 2. View outputs in S3  
 
 1. In the AWS Management Console choose **Services** then select **S3** under Storage.
-2. Select the bucket where your output files are located.  You should find a folder called `assets/VANLIFE/` with subfolders for `HLS`, `MP4` and `Thumbnails`.
-3. **Save this page open in a browser tab** so you can access videos for playout in later modules.
+1. Select the bucket where your output files are located.  You should find a folder called `assets/VANLIFE/` with subfolders for `HLS`, `MP4` and `Thumbnails`.
+1. **Save this page open in a browser tab** so you can access videos for playout in later modules.
 
 ![VANLIFE in S3](../images/module-2-s3.png)
 
