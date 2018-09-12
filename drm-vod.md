@@ -24,12 +24,12 @@ You'll need the following resources created in module 1:
 #### Server Test
 
 1. Navigate to the AWS Lambda Console
-2. Select the region deployed with the SPEKE Reference Server
-3. Select the function that contains the name {STACKNAME}-SPEKEServerLambda-{}
-4. Pull down the test events list at the top right
-5. Choose Configure test events
-6. Set the Saved Test Event name to ServerKeyRequest
-7. Replace the **hostname** and Copy the following exactly into the text area for the event
+1. Select the region deployed with the SPEKE Reference Server
+1. Select the function that contains the name {STACKNAME}-SPEKEServerLambda-{}
+1. Pull down the test events list at the top right
+1. Choose Configure test events
+1. Set the Saved Test Event name to ServerKeyRequest
+1. Replace the **hostname** and Copy the following exactly into the text area for the event
 ```
 {
   "resource": "/copyProtection",
@@ -50,10 +50,10 @@ You'll need the following resources created in module 1:
   "isBase64Encoded": true
 }
 ```
-8. Select the ServerKeyRequest saved test event
-9. Click the Test button
-10. Expand the details of the execution result
-11. Find and verify the following XML data in the Log output compartment (formatted for readability); this data includes the encoded encryption key value and the key ID (kid)
+1. Select the ServerKeyRequest saved test event
+1. Click the Test button
+1. Expand the details of the execution result
+1. Find and verify the following XML data in the Log output compartment (formatted for readability); this data includes the encoded encryption key value and the key ID (kid)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <cpix:CPIX xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:speke="urn:aws:amazon:com:speke" id="5E99137A-BD6C-4ECC-A24D-A3EE04B4E011">
@@ -88,15 +88,15 @@ You'll need the following resources created in module 1:
 #### Server Test
 
 1. Navigate to the AWS API Gateway Console
-2. Select the region deployed with the SPEKE Reference Server
-3. Select the SPEKEReferenceAPI
-4. Select the POST method on the /copyProtection resource
-5. Click the Test link on the left side of the main compartment
-6. Replace the **hostname** Copy the following into the Headers {copyProtection} compartment
+1. Select the region deployed with the SPEKE Reference Server
+1. Select the SPEKEReferenceAPI
+1. Select the POST method on the /copyProtection resource
+1. Click the Test link on the left side of the main compartment
+1. Replace the **hostname** Copy the following into the Headers {copyProtection} compartment
 ```
 Host:hostname.execute-api.us-east-1.amazonaws.com
 ```
-7. Copy the following into the Request Body compartment
+1. Copy the following into the Request Body compartment
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <cpix:CPIX id="5E99137A-BD6C-4ECC-A24D-A3EE04B4E011" 
@@ -126,8 +126,8 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
     </cpix:ContentKeyUsageRuleList>
 </cpix:CPIX>
 ```
-8. Click the Test button
-9. Review the Response Body for the encoded key value
+1. Click the Test button
+1. Review the Response Body for the encoded key value
 ```
 <cpix:CPIX xmlns:cpix="urn:dashif:org:cpix" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:speke="urn:aws:amazon:com:speke" id="5E99137A-BD6C-4ECC-A24D-A3EE04B4E011">
     <cpix:ContentKeyList>
