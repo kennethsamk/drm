@@ -5,13 +5,16 @@ When working with videos for your service or Over the Top (OTT) platform, you wi
 In this module, you'll use AWS Elemental MediaConvert, a file-based video transcoding service to secure and encrypt your videos. You'll learn about the Secure Packager and Encoder Key Exchange (SPEKE) API, deploy an AWS SPEKE reference server, and configure AWS Elemental MediaConvert to encrypt HLS packaged content using AES-128 encryption.
 
 ## Prerequisites
+You'll need to have previously installed the Live Streaming Solution
+<<LINK GOES HERE >>
+
 You'll need to have previously deployed the AWS SPEKE Reference Server.<br/>
 https://github.com/awslabs/speke-reference-server
 
-Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL from AWS API Gateway on your AWS account.
- API Gateway -> SPEKEReferenceAPI -> Stage -> CopyProtection -> POST
+Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL and MediaPackage Role from the output of your Cloudformation Stack Details.
 
-    https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection
+SPEKEServerURL : `https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection`
+MediaPackageSPEKERoleArn : `arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-6PTIFSKYRFFH`
 
 
 ## 1. Testing the SPEKE API...
