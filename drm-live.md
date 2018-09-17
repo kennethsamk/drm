@@ -173,10 +173,16 @@ ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
 1. Enter your Role ARN from the Stack Outputs
 
 ```
-  https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection
+  ROLE HERE
 ```
 1. Expand the *additional configuration* and 
 1. Select `AES 128` for the Encryption method.
+
+![s3 link](/images/live_mediapackage_drm_config.png)
+
+1. Click on `Save` to update your changes.
+
+
 
 ## 3. Play the videos
 
