@@ -160,49 +160,35 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
 ## 2. Configuring DRM on a MediaPackage EndPoint
 
 1. Login to the AWS Console
-1. Navigate to MediaPackage
+1. Navigate to *MediaPackage*
 1. Select the **live-livestream** channel
 1. Scroll down to *Endpoints* section of the channel detals
 
 ![s3 link](/images/live_mediapackage-endpoints.png)
 
-1. Select the **live-livestream-hls** endpoint and edit the endpoint
+5. Select the **live-livestream-hls** endpoint and *edit* the endpoint
 1. Scroll down to the *Package encryption* section of the endpoint details
 1. Select the **Encrypt Content** radio button
 1. Fill in the following encryption details
 ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
-1. Enter the DRM System ID for AES-128
-```
-   81376844-f976-481e-a84e-cc25d39b0b33
-```
-1. Enter your SPEKE Reference Server API as the URL. ( Replace the Hostname )
-
-```
-  https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection
-```
-1. Enter your Role ARN from the Stack Outputs
-
-```
-  ROLE HERE
-```
-1. Expand the *additional configuration* and 
+DRM System ID :  ```81376844-f976-481e-a84e-cc25d39b0b33```
+URL : ``` { SPEKE Reference Server URL }```
+MediaPackage Role : ```{MediaPackage Role from the Stack Output }```
+1. Expand the *additional configuration*  
 1. Select `AES 128` for the Encryption method.
 
 ![s3 link](/images/live_mediapackage_drm_config.png)
-
-1. Click on `Save` to update your changes.
-
-
+1. Click on **Save** to update your changes.
 
 ## 3. Play the videos
 
-To play the videos, copythe 
-
 ![s3 link](/images/live_mediapackage-encryption_config.png)
 
-You can play the HLS using:
+You can play the HLS endping  using:
 * Safari browser by clicking on the **Link** for the object.
 * **JW Player Stream Tester** - by copying the URL for the  **live-livestream-hls** endpoint  and inputing it to the player.  https://developer.jwplayer.com/tools/stream-tester/ 
+
+
 
 ![s3 link](/images/live_mediapackage-preview-hls.png)
 
