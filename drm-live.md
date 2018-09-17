@@ -188,13 +188,13 @@ ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
 
 To play the videos, copythe 
 
-![s3 link](../images/live_mediapackage-encryption_config.png)
+![s3 link](/images/live_mediapackage-encryption_config.png)
 
 You can play the HLS using:
 * Safari browser by clicking on the **Link** for the object.
 * **JW Player Stream Tester** - by copying the URL for the  **live-livestream-hls** endpoint  and inputing it to the player.  https://developer.jwplayer.com/tools/stream-tester/ 
 
-![s3 link](../images/live_mediapackage-preview-hls.png)
+![s3 link](/images/live_mediapackage-preview-hls.png)
 
 ## Completion
 
