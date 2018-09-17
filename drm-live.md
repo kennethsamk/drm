@@ -155,8 +155,14 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
 1. Login to the AWS Console
 1. Navigate to MediaPackage
 1. Select the **live-livestream** channel
-1. Scroll down to **Endpoints** section of the channel detals
+1. Scroll down to *Endpoints* section of the channel detals
+
 ![s3 link](/images/live_mediapackage-endpoints.png)
+
+1. Select the **live-livestream-hls** endpoint and edit the endpoint
+1. Scroll down to the *Package encryption* section of the endpoint details
+1. Select the **Encrypt Content** radio button
+1. Fill in the following details
 
 
 ## 3. Play the videos
