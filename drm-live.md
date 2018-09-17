@@ -13,8 +13,14 @@ https://github.com/awslabs/speke-reference-server
 
 Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL and MediaPackage Role from the output of your Cloudformation Stack Details.
 
-SPEKEServerURL : ```https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection```
-MediaPackageSPEKERoleArn : ```arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-6PTIFSKYRFFH```
+SPEKEServerURL : 
+```
+https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection
+```
+MediaPackageSPEKERoleArn : 
+```
+arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-6PTIFSKYRFFH
+```
 
 
 ## 1. Testing the SPEKE API...
