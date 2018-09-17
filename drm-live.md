@@ -155,8 +155,8 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
 1. Login to the AWS Console
 1. Navigate to MediaPackage
 1. Select the **live-livestream** channel
-1. Scroll down to **Endpoints** section of the Channel Detals
-![s3 link](../images/live_mediapackage-endpoints.png)
+1. Scroll down to **Endpoints** section of the channel detals
+![s3 link](/images/live_mediapackage-endpoints.png)
 
 
 ## 3. Play the videos
