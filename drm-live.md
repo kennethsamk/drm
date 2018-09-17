@@ -6,7 +6,7 @@ In this module, you'll use AWS Elemental MediaConvert, a file-based video transc
 
 ## Prerequisites
 You'll need to have previously installed the Live Streaming Solution
-<<LINK GOES HERE >>
+<< LINK GOES HERE >>
 
 You'll need to have previously deployed the AWS SPEKE Reference Server.<br/>
 https://github.com/awslabs/speke-reference-server
