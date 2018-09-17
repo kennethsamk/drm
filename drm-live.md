@@ -170,9 +170,9 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
 1. Scroll down to the *Package encryption* section of the endpoint details
 1. Select the **Encrypt Content** radio button
 1. Fill in the following encryption details
-ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
-DRM System ID :  ```81376844-f976-481e-a84e-cc25d39b0b33```
-URL : ``` { SPEKE Reference Server URL }```
+ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe``` <br>
+DRM System ID :  ```81376844-f976-481e-a84e-cc25d39b0b33``` <br>
+URL : ``` { SPEKE Reference Server URL }``` <br>
 MediaPackage Role : ```{MediaPackage Role from the Stack Output }```
 1. Expand the *additional configuration*  
 1. Select `AES 128` for the Encryption method.
