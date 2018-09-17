@@ -13,9 +13,6 @@ Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL 
 
     https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection
 
-You'll need the following resources created in module 1:
-* **MediaConvertRole** - the role created to give permission for MediaConvert to access resources in your account.
-* **MediaBucket** - the bucket created to store outputs from MediaConvert
 
 ## 1. Testing the SPEKE API...
 
@@ -162,8 +159,24 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
 1. Select the **live-livestream-hls** endpoint and edit the endpoint
 1. Scroll down to the *Package encryption* section of the endpoint details
 1. Select the **Encrypt Content** radio button
-1. Fill in the following details
+1. Fill in the following encryption details
+ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
+1. Enter the DRM System ID for AES-128
+```
+   81376844-f976-481e-a84e-cc25d39b0b33
+```
+1. Enter your SPEKE Reference Server API as the URL. ( Replace the Hostname )
 
+```
+  https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection
+```
+1. Enter your Role ARN from the Stack Outputs
+
+```
+  https://{host}.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection
+```
+1. Expand the *additional configuration* and 
+1. Select `AES 128` for the Encryption method.
 
 ## 3. Play the videos
 
