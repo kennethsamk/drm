@@ -194,4 +194,4 @@ You can play the AES-128 encrypted HLS endpoint  using:
 
 ## Completion
 
-Congratulations!  You have successfully created an encrypted a live stream using  AWS Elemental MediaPackage. 
+Congratulations!  You have successfully created an encrypted live stream using  AWS Elemental MediaPackage. 
