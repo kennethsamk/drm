@@ -184,7 +184,7 @@ MediaPackage Role : ```{MediaPackage Role from the Stack Output }```
 
 ![s3 link](/images/live_mediapackage-encryption_config.png)
 
-You can play the HLS endping  using:
+You can play the AES-128 encrypted HLS endpoint  using:
 * Safari browser by clicking on the **Link** for the object.
 * **JW Player Stream Tester** - by copying the URL for the  **live-livestream-hls** endpoint  and inputing it to the player.  https://developer.jwplayer.com/tools/stream-tester/ 
 
