@@ -186,20 +186,16 @@ ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe```.
 
 ## 3. Play the videos
 
-To play the videos, you will use the S3 HTTPS resource **Link** on the videos S3 object **Overview** page.
+To play the videos, copythe 
 
-![s3 link](../images/module-2-s3-link.png)
-
-
-#### HLS
-
-The HLS manifest file is located in your ouput s3 bucket in the object: s3://YOUR-MediaBucket/assets/VANLIFE/HLS/VANLIFE.m3u8
+![s3 link](../images/live_mediapackage-encryption_config.png)
 
 You can play the HLS using:
 * Safari browser by clicking on the **Link** for the object.
-* **JW Player Stream Tester** - by copying the link for the object and inputing it to the player.  https://developer.jwplayer.com/tools/stream-tester/ 
+* **JW Player Stream Tester** - by copying the URL for the  **live-livestream-hls** endpoint  and inputing it to the player.  https://developer.jwplayer.com/tools/stream-tester/ 
 
+![s3 link](../images/live_mediapackage-preview-hls.png)
 
 ## Completion
 
-Congratulations!  You have successfully created an encrypted video asset using  AWS Elemental MediaConvert. 
+Congratulations!  You have successfully created an encrypted a live stream using  AWS Elemental MediaPackage. 
