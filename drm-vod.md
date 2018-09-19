@@ -8,7 +8,9 @@ In this module, you'll use AWS Elemental MediaConvert, a file-based video transc
 You'll need to have previously deployed the AWS SPEKE Reference Server.<br/>
 https://github.com/awslabs/speke-reference-server
 
-Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL from the output of your Cloudformation Stack Details. Goto CloudFormation-> Stacks-> AWS SPEKE Reference Server Stack Name -> Outputs
+Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL from the output of your Cloudformation Stack Details. 
+
+Goto CloudFormation-> Stacks-> AWS SPEKE Reference Server Stack Name -> Outputs
 
     https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection
 
