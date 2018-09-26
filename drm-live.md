@@ -15,6 +15,7 @@ Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL 
 
 Goto CloudFormation-> Stacks -> **AWS SPEKE Reference Server Stack Name** -> Outputs
 
+|--------------------------|
 | SPEKEServerURL           |
 |--------------------------|
 | MediaPackageSPEKERoleArn |
