@@ -21,7 +21,7 @@ and make a  note of the below paramters
 | SPEKEServerURL |``` https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection ``` |
 | MediaPackageSPEKERoleArn|``` arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID} ``` |
 
-Next, Goto CloudFormation -> **Live Streaming Solution Stack** -> Outouts and make a note of the *DemoConsole* paramter
+Next, Goto CloudFormation -> **Live Streaming Solution Stack** -> Outouts and make a note of the parameters below.
 
 | Parameter |  |
 |--------------------------|-------------------------------------------------------------------------------------------|
@@ -178,7 +178,7 @@ Host:hostname.execute-api.us-east-1.amazonaws.com
 1. Fill in the following encryption details
 ResourceID : ```6c5f5206-7d98-4808-84d8-94f132c1e9fe``` <br>
 DRM System ID :  ```81376844-f976-481e-a84e-cc25d39b0b33``` <br>
-URL : ``` { SPEKE Reference Server URL }``` <br>
+URL : ``` { SPEKEServerURL }``` <br>
 MediaPackage Role : ```{MediaPackage Role from the Stack Output }```
 1. Expand the *additional configuration*  
 1. Select `AES 128` for the Encryption method.
@@ -192,9 +192,9 @@ MediaPackage Role : ```{MediaPackage Role from the Stack Output }```
 
 You can play the AES-128 encrypted HLS endpoint  using:
 * Safari browser by clicking on the **Link** for the object.
-* **JW Player Stream Tester** - by copying the URL for the  **live-livestream-hls** endpoint  and inputing it to the player.  https://developer.jwplayer.com/tools/stream-tester/ 
 
-
+* Open up the URL from the **DemoConsole** outlined in the Live Solution Stack.
+* Copy the URL outlined in  **CloudFrontHlsEnpoint**  into the player
 
 ![s3 link](/images/live_mediapackage-preview-hls.png)
 
