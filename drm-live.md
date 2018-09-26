@@ -14,7 +14,7 @@ https://github.com/awslabs/speke-reference-server
 Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL and MediaPackage Role from the output of your Cloudformation Stack Details. 
 
 Goto CloudFormation-> Stacks -> **AWS SPEKE Reference Server Stack Name** -> Outputs
-and make a  note of the below paramter
+and make a  note of the below paramters
 
 | Parameter | Example  |
 |--------------------------|-------------------------------------------------------------------------------------------|
@@ -27,17 +27,7 @@ Next, Goto CloudFormation -> **Live Streaming Solution Stack** -> Outouts and ma
 |--------------------------|-------------------------------------------------------------------------------------------|
 | DemoConsole |```https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection``` |
 
-
-SPEKEServerURL ( Replace with your hostname ) : 
-```
-https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection
-
-```
-MediaPackageSPEKERoleArn ( Replace with your AWS AccountID and InstanceID: 
-```
-arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID}
-```
-
+**Make sure you replace the various values such as hostname, aws_account with your own deployment vaues**
 
 ## 1. Testing the SPEKE API...
 
