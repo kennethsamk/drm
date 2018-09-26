@@ -11,7 +11,14 @@ You'll need to have previously installed the Live Streaming Solution
 You'll need to have previously deployed the AWS SPEKE Reference Server.<br/>
 https://github.com/awslabs/speke-reference-server
 
-Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL and MediaPackage Role from the output of your Cloudformation Stack Details. Goto CloudFormation-> Stacks-> AWS SPEKE Reference Server Stack Name -> Outputs
+Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL and MediaPackage Role from the output of your Cloudformation Stack Details. 
+
+Goto CloudFormation-> Stacks -> **AWS SPEKE Reference Server Stack Name** -> Outputs
+
+| SPEKEServerURL           |
+|--------------------------|
+| MediaPackageSPEKERoleArn |
+
 
 SPEKEServerURL ( Replace with your hostname ) : 
 ```
