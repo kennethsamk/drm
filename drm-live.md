@@ -17,10 +17,10 @@ Goto CloudFormation-> Stacks -> **AWS SPEKE Reference Server Stack Name** -> Out
 
 |  |  |
 |--------------------------|-------------------------------------------------------------------------------------------|
-| SPEKEServerURL |```https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection``` |
-| MediaPackageSPEKERoleArn |```arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID}``` |
+| SPEKEServerURL |https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection|
+| MediaPackageSPEKERoleArn |arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID}|
 
-Goto CloudFormation-> **Live Streaming Solution Stack** -> Outouts
+Next, Goto CloudFormation -> **Live Streaming Solution Stack** -> Outouts
 
 |  |  |
 |--------------------------|-------------------------------------------------------------------------------------------|
