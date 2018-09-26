@@ -18,15 +18,15 @@ and make a  note of the below paramters
 
 | Parameter | Example  |
 |--------------------------|-------------------------------------------------------------------------------------------|
-| SPEKEServerURL |https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection|
-| MediaPackageSPEKERoleArn| arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID} |
+| SPEKEServerURL |``` https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection ```|
+| MediaPackageSPEKERoleArn| ``` arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID} ``` |
 
 Next, Goto CloudFormation -> **Live Streaming Solution Stack** -> Outouts and make a note of the *DemoConsole* paramter
 
 | Parameter |  |
 |--------------------------|-------------------------------------------------------------------------------------------|
-| DemoConsole |```https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection``` |
-| CloudFrontHlsEnpoint | https://{hostname}.cloudfront.net/7b445d5fd31d447a8e233944747c7fb0/index.m3u8 | 
+| DemoConsole |``` https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection ``` |
+| CloudFrontHlsEnpoint |``` https://{hostname}.cloudfront.net/7b445d5fd31d447a8e233944747c7fb0/index.m3u8 ``` | 
 
 **Make sure you replace the various values such as hostname, aws_account with your own deployment vaues**
 
