@@ -18,8 +18,8 @@ and make a  note of the below paramters
 
 | Parameter | Example  |
 |--------------------------|-------------------------------------------------------------------------------------------|
-| SPEKEServerURL |``` https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection ```|
-| MediaPackageSPEKERoleArn| ``` arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID} ``` |
+| SPEKEServerURL |``` https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection ``` |
+| MediaPackageSPEKERoleArn|``` arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID} ``` |
 
 Next, Goto CloudFormation -> **Live Streaming Solution Stack** -> Outouts and make a note of the *DemoConsole* paramter
 
