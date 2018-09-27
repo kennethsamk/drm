@@ -8,15 +8,14 @@ In this module, you'll use AWS Elemental MediaConvert, a file-based video transc
 You'll need to have previously deployed the AWS SPEKE Reference Server.<br/>
 https://github.com/awslabs/speke-reference-server
 
-Once you've installed the AWS SPEKE Reference Server retrieve the SPEKE API URL from the output of your Cloudformation Stack Details. 
+Goto CloudFormation-> Stacks -> **AWS SPEKE Reference Server Stack Name** -> Outputs
+and make a  note of the below paramters
 
-Goto CloudFormation-> Stacks-> AWS SPEKE Reference Server Stack Name -> Outputs
+| Parameter | Example  |
+|--------------------------|-------------------------------------------------------------------------------------------|
+| SPEKEServerURL |``` https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection ``` |
+| MediaConvertSPEKERoleArn|``` arn:aws:iam::{AWS_ACCOUNT}:role/speke-reference-MediaPackageInvokeSPEKERole-{INSTANCE_ID} ``` |
 
-    https://{hostname}.execute-api.us-east-1.amazonaws.com/EkeStage/copyProtection
-
-You'll need the following resources created in module 1:
-* **MediaConvertRole** - the role created to give permission for MediaConvert to access resources in your account.
-* **MediaBucket** - the bucket created to store outputs from MediaConvert
 
 ## 1. Testing the SPEKE API...
 
