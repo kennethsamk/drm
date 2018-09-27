@@ -1,8 +1,8 @@
 # Module: Digital Rights Management (DRM) and Encryption
 
-When working with videos for your service or Over the Top (OTT) platform, you will very likely need to secure and protect your content prior to delivering videos to your end users. Approaches for securing content include basic content _encryption_ or by applying highly secure Digital Rights Management (DRM) to the content. Examples of DRM include Fairplay, Widevine and PlayReady.
+When working with videos for your service or Over the Top (OTT) platform, you will very likely need to secure and protect your live streams prior to delivering content to your end users. Approaches for securing content include basic content _encryption_ or by applying highly secure Digital Rights Management (DRM) to the content. Examples of DRM include Fairplay, Widevine and PlayReady.
 
-In this module, you'll use AWS Elemental MediaConvert, a file-based video transcoding service to secure and encrypt your videos. You'll learn about the Secure Packager and Encoder Key Exchange (SPEKE) API, deploy an AWS SPEKE reference server, and configure AWS Elemental MediaConvert to encrypt HLS packaged content using AES-128 encryption.
+In this module, you'll use AWS Elemental MediaPackage, to secure and encrypt your live channels. You'll learn about the Secure Packager and Encoder Key Exchange (SPEKE) API, deploy an AWS SPEKE reference server, and configure AWS Elemental MediaPackage to encrypt HLS  content using AES-128 encryption.
 
 ## Prerequisites
 You'll need to have previously installed the Live Streaming Solution
