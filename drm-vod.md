@@ -191,15 +191,14 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 13. Click on **Update** at the bottom of the page to save the Job template. 
 
-#### Create the job
+## 2.  Resubmit a VOD Workflow Job.
 
-1. Scroll to the top Job template details page and select **Create Job**
-1. Browse to your input source asset
-1. Wait for the job to complete.  Monitor the status of the job by refreshing the **Job details** page using the **refresh** button. 
+1. In the AWS Management Console choose **Services** then select **S3** under Storage.
+1. Select the bucket where your source input files are located.
+1. Rename the source asset ```{source asset name} ```
+1. This should trigger an asset workflow and the encrypted files will be output to a folder called `assets/VANLIFE/` with subfolders for `HLS`
 
-    ![Save the Job ID](../images/mediaconvert-save-jobid.png)
-
-## 2. View outputs in S3  
+## 3. View outputs in S3  
 
 1. In the AWS Management Console choose **Services** then select **S3** under Storage.
 1. Select the bucket where your output files are located.  You should find a folder called `assets/VANLIFE/` with subfolders for `HLS`, `MP4` and `Thumbnails`.
@@ -209,7 +208,7 @@ In this module, you will create a MediaConvert job by duplicating and modifying 
 
 NOTE: You can also access the S3 bucket for each output group using the links in the **Outputs** section of the MediaConvert console **Job details** page.
 
-## 3. Play the videos
+## 4. Play the videos
 
 To play the videos, you will use the S3 HTTPS resource **Link** on the videos S3 object **Overview** page.
 
