@@ -94,7 +94,7 @@ and make a  note of the below paramters
 1. Click the Test link on the left side of the main compartment
 1. Replace the **hostname** Copy the following into the Headers {copyProtection} compartment
 ```
-Host:hostname.execute-api.us-east-1.amazonaws.com
+Host:hostname.execute-api.us-west-2.amazonaws.com
 ```
 1. Copy the following into the Request Body compartment
 ```
